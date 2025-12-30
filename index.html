@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Chat UI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell simple">
+      <main class="chat-pane">
+        <header class="chat-header">
+          <div class="chat-header-main">
+            <div class="chat-title">
+              <h1>Chat</h1>
+              <p>Simple, clean conversation view</p>
+            </div>
+            <div class="chat-user">
+              <div class="avatar status-online">
+                <img src="https://i.pravatar.cc/100?img=5" alt="You" />
+              </div>
+              <span class="chat-user-name">You</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="chat-body">
+          <div class="message-row">
+            <div class="message-bubble incoming">
+              Hi! This is a simple chat interface design.
+              <div class="message-meta">
+                <span>09:41</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="message-row self">
+            <div class="message-bubble outgoing">
+              Great! I can send and see my messages here.
+              <div class="message-meta">
+                <span>09:42</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="chat-input-bar">
+          <div class="input-wrapper">
+            <input
+              id="chat-input"
+              type="text"
+              placeholder="Type a message..."
+              autocomplete="off"
+            />
+          </div>
+          <button id="send-btn" class="primary-pill">
+            Send
+          </button>
+        </footer>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
